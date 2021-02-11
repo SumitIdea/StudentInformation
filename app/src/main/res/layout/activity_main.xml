@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/fac">
+    <include
+        layout="@layout/customtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/username"
+            android:background="#ffffff"
+            android:hint="@string/username"
+            android:textColorHint="#FF0F0F0F">
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/password"
+            android:drawableLeft="@drawable/password"
+            android:textColorHint="#FF0F0F0F">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="@string/login"
+            android:textColor="#F6F6F6">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
